@@ -1,0 +1,99 @@
+@import '../../styles/colors.css';
+
+.gallery {
+  position: relative;
+}
+
+/* Slide Principal */
+.galleryMainSlide {
+  position: relative;
+  overflow: hidden;
+  background: var(--light-gray-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galleryMainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Setas de Navegação */
+.galleryArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.galleryArrow:hover:not(.disabled) {
+  background: var(--white);
+}
+
+.galleryArrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.galleryArrowLeft {
+  left: 16px;
+}
+
+.galleryArrowRight {
+  right: 16px;
+}
+
+.galleryArrow img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Thumbnails */
+.galleryThumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  overflow-x: auto;
+  padding: 4px 0;
+}
+
+.galleryThumb {
+  flex-shrink: 0;
+  width: 117px;
+  height: 95px;
+  border: 2px solid transparent;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.galleryThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.galleryThumb.active {
+  border-color: var(--primary);
+}
+
+.galleryThumb:hover:not(.active) {
+  border-color: var(--light-gray-2);
+}

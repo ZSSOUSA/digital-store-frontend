@@ -1,0 +1,54 @@
+@import '../../styles/colors.css';
+
+.footer {
+  background-color: var(--dark-gray);
+  color: var(--white);
+  padding: 40px 24px 16px;
+}
+
+.footerTop {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  margin-bottom: 32px;
+}
+
+.footerBrand {
+  max-width: 380px;
+}
+
+.footerLogo {
+  width: 253px;
+  margin-bottom: 16px;
+}
+
+.footerText {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--light-gray-2);
+  margin-bottom: 24px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footerDivider {
+  border: none;
+  border-top: 1px solid var(--dark-gray-3);
+  margin: 32px 0 16px;
+}
+
+.footerBottom {
+  text-align: center;
+  font-size: 14px;
+  color: var(--light-gray-2);
+}

@@ -1,0 +1,65 @@
+@import '../../styles/colors.css';
+
+.productCardLink {
+  text-decoration: none;
+}
+
+.productCard {
+  width: 292px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.productImageBox {
+  width: 292px;
+  height: 321px;
+  background: var(--light-gray-3);
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.productName {
+  font-size: 14px;
+  color: var(--dark-gray-2);
+  margin: 0;
+}
+
+.productPrice {
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+
+.productPriceRow {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.priceOld {
+  color: var(--light-gray);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.priceNew {
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: 24px;
+}

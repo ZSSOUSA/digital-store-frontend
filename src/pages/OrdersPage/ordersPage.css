@@ -1,0 +1,251 @@
+@import '../../styles/colors.css';
+
+.ordersPageContainer {
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ordersPageContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ordersPageTitle {
+  font-size: 24px;
+  color: var(--dark-gray-2);
+  margin: 0 0 32px 0;
+  border-bottom: 2px solid var(--light-gray-2);
+  padding-bottom: 16px;
+}
+
+.ordersList {
+  background: var(--white);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.ordersHeader {
+  display: grid;
+  grid-template-columns: 120px 120px 100px 120px 120px;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--light-gray-3);
+  border-bottom: 1px solid var(--light-gray-2);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--dark-gray-2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.orderItem {
+  display: grid;
+  grid-template-columns: 120px 120px 100px 120px 120px;
+  gap: 16px;
+  padding: 20px;
+  border-bottom: 1px solid var(--light-gray-2);
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.orderItem:hover {
+  background: var(--light-gray-3);
+}
+
+.orderItem:last-child {
+  border-bottom: none;
+}
+
+.ordersColId {
+  display: flex;
+  align-items: center;
+}
+
+.orderNumber {
+  font-weight: 600;
+  color: var(--dark-gray);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.orderNumber:hover {
+  color: var(--primary);
+}
+
+.ordersColDate {
+  font-size: 14px;
+  color: var(--dark-gray-2);
+}
+
+.ordersColItems {
+  font-size: 14px;
+  color: var(--dark-gray-2);
+}
+
+.ordersColStatus {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.status--success {
+  background: rgba(82, 202, 118, 0.15);
+  color: var(--success);
+}
+
+.status--warning {
+  background: rgba(246, 170, 28, 0.15);
+  color: var(--warning);
+}
+
+.status--error {
+  background: rgba(238, 66, 102, 0.15);
+  color: var(--error);
+}
+
+.status--dark-gray-3 {
+  background: rgba(102, 102, 102, 0.15);
+  color: var(--dark-gray-3);
+}
+
+.ordersColTotal {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+
+.ordersEmpty {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--light-gray);
+}
+
+.ordersEmpty p {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.ordersEmpty p:first-child {
+  color: var(--dark-gray-2);
+  font-size: 18px;
+}
+
+.ordersInfoBox {
+  margin-top: 32px;
+  padding: 16px 20px;
+  background: rgba(181, 182, 242, 0.1);
+  border-left: 4px solid var(--secondary);
+  border-radius: 4px;
+}
+
+.ordersInfoBox h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: var(--dark-gray-2);
+}
+
+.ordersInfoBox p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--dark-gray-3);
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .ordersHeader,
+  .orderItem {
+    grid-template-columns: 100px 90px 80px 100px 90px;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .orderNumber,
+  .ordersColDate,
+  .ordersColItems,
+  .ordersColTotal {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ordersPageContainer {
+    padding: 16px;
+  }
+
+  .ordersPageTitle {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .ordersList {
+    overflow-x: auto;
+  }
+
+  .ordersHeader,
+  .orderItem {
+    grid-template-columns: 90px 80px 70px 90px 80px;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .orderNumber,
+  .ordersColDate,
+  .ordersColItems,
+  .statusBadge,
+  .ordersColTotal {
+    font-size: 12px;
+  }
+
+  .statusBadge {
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ordersHeader,
+  .orderItem {
+    grid-template-columns: 1fr;
+  }
+
+  .ordersHeader {
+    display: none;
+  }
+
+  .orderItem {
+    border: 1px solid var(--light-gray-2);
+    margin-bottom: 12px;
+    padding: 16px;
+    gap: 8px;
+    grid-auto-flow: row;
+  }
+
+  .orderItem::before {
+    content: "";
+    display: none;
+  }
+
+  .ordersColId::before,
+  .ordersColDate::before,
+  .ordersColItems::before,
+  .ordersColStatus::before,
+  .ordersColTotal::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--dark-gray-2);
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+}

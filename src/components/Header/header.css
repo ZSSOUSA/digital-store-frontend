@@ -1,0 +1,100 @@
+@import '../../styles/colors.css';
+
+.header {
+  background: var(--white);
+  border-bottom: 1px solid var(--light-gray-2);
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 24px;
+}
+
+.searchBox {
+  flex: 1;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--light-gray-2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.searchInput {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.searchButton {
+  height: 40px;
+  width: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.redirectArea {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.signupLink {
+  font-size: 16px;
+  color: var(--dark-gray-2);
+  text-decoration: underline;
+}
+
+.signinButton {
+  width: 114px;
+  height: 40px;
+  border-radius: 4px;
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+.cartIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.mainNav {
+  display: flex;
+  gap: 24px;
+  padding: 0 24px 10px 24px;
+}
+
+.navItem {
+  color: var(--dark-gray-2);
+  text-decoration: none;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.navItem.active {
+  color: var(--primary);
+}
+
+.navItem.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--primary);
+}

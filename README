@@ -1,0 +1,38 @@
+#  Digital Store – Frontend
+
+Este repositório contém o **frontend** do projeto **Digital Store**, desenvolvido como atividade final do curso de **Formação em Desenvolvedor Full Stack – Projeto Geração Tech**.
+
+O projeto foi criado com o objetivo de aplicar os conceitos básicos de **React**, organização de componentes e consumo de API.
+
+---
+
+## Sobre o Projeto
+
+A Digital Store é uma loja virtual simples onde o usuário pode visualizar produtos, pesquisar e acessar detalhes de cada item.
+
+Este frontend consome dados de uma API desenvolvida no backend do projeto.
+
+---
+
+## Funcionalidades
+
+- Listagem de produtos  
+- Pesquisa de produtos  
+- Página de detalhes  
+- Layout responsivo  
+
+---
+
+##  Tecnologias Utilizadas
+
+- React  
+- JavaScript  
+- CSS  
+
+---
+
+##  Como Executar
+
+```bash
+npm install
+npm start

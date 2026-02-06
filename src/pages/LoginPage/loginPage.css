@@ -1,0 +1,213 @@
+@import '../../styles/colors.css';
+
+.loginPageContainer {
+  padding: 40px 24px;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-gray-3);
+}
+
+.loginPageBox {
+  background: var(--white);
+  border-radius: 4px;
+  padding: 40px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loginPageTitle {
+  font-size: 28px;
+  color: var(--dark-gray);
+  margin: 0 0 8px 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.loginPageSubtitle {
+  font-size: 14px;
+  color: var(--dark-gray-3);
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+.loginSuccess {
+  padding: 12px 16px;
+  background: rgba(82, 202, 118, 0.15);
+  border: 1px solid var(--success);
+  border-radius: 4px;
+  color: var(--success);
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.loginError {
+  padding: 12px 16px;
+  background: rgba(238, 66, 102, 0.15);
+  border: 1px solid var(--error);
+  border-radius: 4px;
+  color: var(--error);
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-gray-2);
+}
+
+.formInput {
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--light-gray-2);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--dark-gray);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.formInput::placeholder {
+  color: var(--light-gray);
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(201, 32, 113, 0.1);
+}
+
+.formInput.error {
+  border-color: var(--error);
+  background: rgba(238, 66, 102, 0.05);
+}
+
+.formInput.error:focus {
+  box-shadow: 0 0 0 2px rgba(238, 66, 102, 0.1);
+}
+
+.formError {
+  font-size: 12px;
+  color: var(--error);
+}
+
+.loginButton {
+  height: 44px;
+  border: none;
+  border-radius: 4px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.loginButton:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(201, 32, 113, 0.2);
+}
+
+.loginButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.loginButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loginFooter {
+  text-align: center;
+  border-top: 1px solid var(--light-gray-2);
+  padding-top: 20px;
+  margin-bottom: 24px;
+}
+
+.loginFooter p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--dark-gray-2);
+}
+
+.loginLink {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.loginLink:hover {
+  text-decoration: underline;
+}
+
+.loginTestCredentials {
+  padding: 16px;
+  background: rgba(185, 181, 242, 0.1);
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--dark-gray-2);
+}
+
+.loginTestCredentials p {
+  margin: 4px 0;
+  line-height: 1.6;
+}
+
+.loginTestCredentials p:first-child {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 480px) {
+  .loginPageContainer {
+    padding: 20px 16px;
+    min-height: calc(100vh - 160px);
+  }
+
+  .loginPageBox {
+    padding: 24px;
+  }
+
+  .loginPageTitle {
+    font-size: 24px;
+  }
+
+  .loginPageSubtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .formInput {
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .loginButton {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .loginTestCredentials {
+    font-size: 11px;
+  }
+}

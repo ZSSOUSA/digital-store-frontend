@@ -1,0 +1,111 @@
+@import '../../styles/colors.css';
+
+.buyBox {
+  padding: 20px;
+  background: var(--white);
+  border-radius: 4px;
+}
+
+.buyBoxName {
+  font-size: 32px;
+  color: var(--dark-gray);
+  margin: 0 0 12px 0;
+}
+
+.buyBoxMeta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.buyBoxReference {
+  font-size: 12px;
+  color: var(--dark-gray-3);
+}
+
+.buyBoxRating {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.buyBoxStars {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--white);
+  background: var(--warning);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.buyBoxStars img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+
+.buyBoxRatingCount {
+  font-size: 14px;
+  color: var(--light-gray);
+}
+
+.buyBoxPrices {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.buyBoxPrice {
+  font-size: 32px;
+  color: var(--dark-gray-2);
+  font-weight: 700;
+}
+
+.buyBoxPriceOld {
+  font-size: 16px;
+  color: var(--light-gray-2);
+  text-decoration: line-through;
+}
+
+.buyBoxDescription {
+  font-size: 14px;
+  color: var(--dark-gray-2);
+  line-height: 22px;
+  margin: 0 0 20px 0;
+}
+
+.buyBoxOptions {
+  margin-bottom: 20px;
+}
+
+.buyBoxButton {
+  width: 100%;
+  height: 56px;
+  background: var(--warning);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buyBoxButton:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.buyBoxButton:active {
+  transform: translateY(0);
+}
+
+.buyBoxButton.added {
+  background: var(--success);
+}

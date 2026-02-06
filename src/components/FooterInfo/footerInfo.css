@@ -1,0 +1,37 @@
+@import '../../styles/colors.css';
+
+.footerInfo {
+  flex: 1;
+  min-width: 160px;
+}
+
+.footerInfoTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 0 16px 0;
+}
+
+.footerInfoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerInfoList li {
+  margin: 0;
+}
+
+.footerInfoList a {
+  font-size: 14px;
+  color: var(--light-gray-2);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerInfoList a:hover {
+  color: var(--primary);
+}

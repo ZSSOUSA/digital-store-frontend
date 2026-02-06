@@ -1,0 +1,49 @@
+@import '../../styles/colors.css';
+
+.section {
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.sectionHeader--left {
+  justify-content: flex-start;
+}
+
+.sectionHeader--center {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sectionHeader h2 {
+  font-size: 24px;
+  color: var(--dark-gray-2);
+}
+
+.sectionHeader a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.sectionHeader--center a {
+  margin-top: 16px;
+}
+
+.sectionContent {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}

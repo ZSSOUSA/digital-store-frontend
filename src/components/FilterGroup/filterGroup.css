@@ -1,0 +1,53 @@
+@import '../../styles/colors.css';
+
+.filterGroup {
+  background: var(--white);
+  width: 308px;
+  padding: 20px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+}
+
+.filterGroupTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-gray-2);
+  margin: 0 0 12px 0;
+}
+
+.filterGroupDivider {
+  height: 1px;
+  background: var(--light-gray-2);
+  margin-bottom: 16px;
+}
+
+.filterGroupOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filterGroupLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.filterGroupInput {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  accent-color: var(--primary);
+  flex-shrink: 0;
+}
+
+.filterGroupText {
+  font-size: 14px;
+  color: var(--dark-gray-2);
+  user-select: none;
+}
+
+.filterGroupLabel:hover .filterGroupText {
+  color: var(--primary);
+}
