@@ -105,10 +105,9 @@ export default function OrdersPage() {
 
           {/* Seção de informação sobre autenticação */}
           <div className="ordersInfoBox">
-            <h3>ℹ️ Informação</h3>
+            <h3> Informação</h3>
             <p>
-              Esta página exibe pedidos de exemplo. Para gerenciar seus pedidos reais, 
-              você precisará estar logado após implementar o sistema de autenticação.
+              |Pagina de exemplo, faça login para ver seus pedidos. 
             </p>
           </div>
         </div>
