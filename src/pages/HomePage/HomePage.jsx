@@ -4,7 +4,9 @@ import ProductListing from "../../components/ProductListing/ProductListing";
 import Gallery from "../../components/Gallery/Gallery";
 import "./collections.css";
 
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = process.env.REACT_APP_API_URL 
+  ? process.env.REACT_APP_API_URL.replace('/v1', '') 
+  : "http://localhost:3000";
 
 export default function HomePage() {
   // Slide de imagens
