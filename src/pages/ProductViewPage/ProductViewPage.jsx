@@ -12,7 +12,9 @@ import { useEffect, useState } from "react";
 import { getProductById } from "../../services/productService";
 import fallbackImg from "../../assets/logo.svg";
 
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = process.env.REACT_APP_API_URL 
+  ? process.env.REACT_APP_API_URL.replace('/v1', '') 
+  : 'http://localhost:3000';
 
 export default function ProductViewPage() {
   const { id } = useParams();
