@@ -166,7 +166,7 @@ export default function LoginPage() {
           {/* Credenciais de Teste */}
           <div className="loginTestCredentials">
             <p><strong>Teste com:</strong></p>
-            <p> Email: admin@minhaloja</p>
+            <p> Email: admin@minhaloja.com</p>
             <p> Senha: 123456</p>
           </div>
         </div>
