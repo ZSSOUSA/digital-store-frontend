@@ -25,6 +25,13 @@ export default function OrdersPage() {
       total: 519.80,
       items: 2,
     },
+    {
+      id: "PED004",
+      date: "2024-12-25",
+      status: "cancelado",
+      total: 89.80,
+      items: 4,
+    },
   ];
 
   const getStatusColor = (status) => {
@@ -107,7 +114,7 @@ export default function OrdersPage() {
           <div className="ordersInfoBox">
             <h3> Informação</h3>
             <p>
-              |Pagina de exemplo, faça login para ver seus pedidos. 
+              Página de exemplo, faça login para ver seus pedidos. 
             </p>
           </div>
         </div>
