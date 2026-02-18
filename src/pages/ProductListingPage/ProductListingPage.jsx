@@ -118,6 +118,8 @@ export default function ProductListingPage() {
               title="Preço"
               inputType="radio"
               options={priceFilterOptions}
+              name="priceFilter"
+              value={priceFilter}
               onChange={(selectedValue) => setPriceFilter(selectedValue)}
             />
           </aside>
