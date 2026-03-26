@@ -52,3 +52,29 @@
   font-size: 14px;
   color: var(--light-gray-2);
 }
+
+@media (max-width: 1024px) {
+  .footerTop {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .footerBrand {
+    max-width: 100%;
+  }
+
+  .footerLogo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer {
+    padding: 24px 12px 12px;
+  }
+
+  .footerText {
+    font-size: 13px;
+  }
+}

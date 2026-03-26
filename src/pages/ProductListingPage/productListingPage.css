@@ -97,3 +97,23 @@
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .productListingPageContent {
+    padding: 0 8px;
+    gap: 12px;
+  }
+
+  /* Hide sidebar by default on very small screens to prioritize product grid */
+  .productListingSidebar {
+    display: none;
+  }
+
+  .productListingMain {
+    width: 100%;
+  }
+
+  .productListingSortSelect {
+    height: 48px;
+  }
+}

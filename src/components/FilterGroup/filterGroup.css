@@ -51,3 +51,30 @@
 .filterGroupLabel:hover .filterGroupText {
   color: var(--primary);
 }
+
+@media (max-width: 768px) {
+  .filterGroup {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .filterGroupOptions {
+    gap: 8px;
+  }
+
+  .filterGroupInput {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .filterGroupTitle {
+    font-size: 13px;
+  }
+
+  .filterGroupText {
+    font-size: 13px;
+  }
+}

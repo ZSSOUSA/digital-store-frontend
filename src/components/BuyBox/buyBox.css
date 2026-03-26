@@ -109,3 +109,45 @@
 .buyBoxButton.added {
   background: var(--success);
 }
+
+@media (max-width: 768px) {
+  .buyBox {
+    padding: 16px;
+  }
+
+  .buyBoxName {
+    font-size: 22px;
+  }
+
+  .buyBoxPrices {
+    gap: 8px;
+  }
+
+  .buyBoxPrice {
+    font-size: 24px;
+  }
+
+  .buyBoxPriceOld {
+    font-size: 14px;
+  }
+
+  .buyBoxDescription {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .buyBoxButton {
+    height: 48px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .buyBoxName {
+    font-size: 20px;
+  }
+
+  .buyBoxPrice {
+    font-size: 20px;
+  }
+}
