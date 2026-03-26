@@ -94,17 +94,14 @@ src/
 
 cd frontend
 npm install
-```
 
 ### Executar em desenvolvimento
 
 
 npm start
-```
 
 O frontend sobe em `http://localhost:3001` por padrão.
 
----
 
 ## Configuração da API
 
@@ -112,9 +109,7 @@ Por padrão o frontend consome `http://localhost:3000/v1`.
 
 Para alterar, crie um arquivo `.env` na pasta `frontend/` com:
 
-```
 REACT_APP_API_URL=http://localhost:3000/v1
-```
 
 ### Rodando junto com o backend
 
@@ -122,14 +117,12 @@ REACT_APP_API_URL=http://localhost:3000/v1
 2. Inicie o frontend:
 
 npm start
-```
 
 ## Autor
 
 - **Desenvolvedor:** Zaqueu Sousa
 - **GitHub:** [github.com/ZSSOUSA](https://github.com/ZSSOUSA)
 
----
 
 ## Licença
 
