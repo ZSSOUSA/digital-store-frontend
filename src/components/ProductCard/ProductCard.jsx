@@ -32,9 +32,9 @@ export default function ProductCard({ image, name, price, priceDiscount, to }) {
 
   return to ? (
     <Link to={to} className="productCardLink">
-      <div className="productCard">{content}</div>
+      <article className="productCard">{content}</article>
     </Link>
   ) : (
-    <div className="productCard">{content}</div>
+    <article className="productCard">{content}</article>
   );
 }

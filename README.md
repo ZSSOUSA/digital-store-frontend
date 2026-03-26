@@ -92,11 +92,15 @@ src/
 
 ### Instalação
 
-cd frontend
+# Clone o repositório
+git clone https://github.com/ZSSOUSA/digital-store-frontend.git
+cd digital-store-frontend/frontend
+
+# Instale as dependências
 npm install
 
-### Executar em desenvolvimento
 
+### Executar em desenvolvimento
 
 npm start
 
@@ -109,11 +113,14 @@ Por padrão o frontend consome `http://localhost:3000/v1`.
 
 Para alterar, crie um arquivo `.env` na pasta `frontend/` com:
 
+env
 REACT_APP_API_URL=http://localhost:3000/v1
+
 
 ### Rodando junto com o backend
 
 1. Clone e suba o backend: [digital-store-backend](https://github.com/ZSSOUSA/digital-store-backend)
+
 2. Inicie o frontend:
 
 npm start

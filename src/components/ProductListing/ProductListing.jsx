@@ -5,21 +5,22 @@ export default function ProductListing({ products, children }) {
   // Se receber products como prop, renderiza cards
   if (products && Array.isArray(products)) {
     return (
-      <div className="productGrid">
+      <ul className="productGrid">
         {products.map((product, index) => (
-          <ProductCard
-            key={index}
-            image={product.image}
-            name={product.name}
-            price={product.price}
-            priceDiscount={product.priceDiscount}
-            to={product.to}
-          />
+          <li key={index}>
+            <ProductCard
+              image={product.image}
+              name={product.name}
+              price={product.price}
+              priceDiscount={product.priceDiscount}
+              to={product.to}
+            />
+          </li>
         ))}
-      </div>
+      </ul>
     );
   }
 
   // Caso contrário, funciona como wrapper (retrocompatibilidade)
-  return <div className="productGrid">{children}</div>;
+  return <ul className="productGrid">{children}</ul>;
 }
