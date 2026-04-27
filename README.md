@@ -94,6 +94,7 @@ src/
 
 # Clone o repositório
 git clone https://github.com/ZSSOUSA/digital-store-frontend.git
+
 cd digital-store-frontend/frontend
 
 # Instale as dependências
@@ -109,17 +110,17 @@ O frontend sobe em `http://localhost:3001` por padrão.
 
 ## Configuração da API
 
-Por padrão o frontend consome `http://localhost:3000/v1`.
+Por padrão o frontend consome `http://localhost:3001/v1`.
 
 Para alterar, crie um arquivo `.env` na pasta `frontend/` com:
 
-env
-REACT_APP_API_URL=http://localhost:3000/v1
+REACT_APP_API_URL=http://localhost:3001/v1
 
 
 ### Rodando junto com o backend
 
 1. Clone e suba o backend: [digital-store-backend](https://github.com/ZSSOUSA/digital-store-backend)
+Siga as instruções do README do backend para iniciar a API.
 
 2. Inicie o frontend:
 
